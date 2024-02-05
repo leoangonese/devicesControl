@@ -35,10 +35,10 @@ dotnet start
 ```
 
 # Tecnologias
-ASP.net MVC </br>
-JavaScript </br>
-CSS </br>
-BootStrap </br>
-JQuery
+- ASP.net MVC 
+- JavaScript
+- CSS
+- BootStrap
+- JQuery
 
 Este projeto é uma ótima oportunidade para aprendizado e prática, explorando o desenvolvimento web com ASP.NET MVC e a integração de tecnologias front-end populares. Sinta-se à vontade para contribuir e aprimorar este projeto!
