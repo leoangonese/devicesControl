@@ -1,0 +1,44 @@
+@model Item
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                    <h2>Detalhes do Equipamento</h2>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">N. Série:</dt>
+                        <dd class="col-sm-8">@Model.id</dd>
+
+                        <dt class="col-sm-4">Aquisição:</dt>
+                        <dd class="col-sm-8">@Model.date</dd>
+
+                        <dt class="col-sm-4">Equipamento:</dt>
+                        <dd class="col-sm-8">@Model.type</dd>
+
+                        <dt class="col-sm-4">Status:</dt>
+                        <dd class="col-sm-8">@Model.status</dd>
+
+                        <dt class="col-sm-4">End. Hardware:</dt>
+                        <dd class="col-sm-8">@Model.hardware</dd>
+
+                        <dt class="col-sm-4">Cartão:</dt>
+                        <dd class="col-sm-8">@Model.card</dd>
+
+                        <dt class="col-sm-4">Online:</dt>
+                        <dd class="col-sm-8">@Model.online</dd>
+
+                        <dt class="col-sm-4">Perfil:</dt>
+                        <dd class="col-sm-8">@Model.profile</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    @Html.ActionLink("Voltar para Lista", "Index", null, new { @class = "btn btn-warning" })
+</div>

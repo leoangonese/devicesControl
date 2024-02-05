@@ -1,0 +1,49 @@
+@model List<Item>
+
+<h2 class="my-5 display-4 text-black text-center">Equipamentos Disponíveis</h2>
+
+<div class="table-responsive mt-4">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th>N. Série</th>
+                <th>Equipamento</th>
+                <th>Status</th>
+                <th>Cartão</th>
+                <th>Online</th>
+                <th>Perfil</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.id</td>
+                        <td>@item.type</td>
+                        <td>@item.status</td>
+                        <td>@item.card</td>
+                        <td>@item.online</td>
+                        <td>@item.profile</td>
+                        <td>
+                            @Html.ActionLink("Detalhes", "Details", new { Id = item.id }, new { @class = "btn btn-info btn-sm" }) 
+                            @Html.ActionLink("Editar", "Edit", new { Id = item.id }, new { @class = "btn btn-warning btn-sm" }) 
+                            @Html.ActionLink("Excluir", "Delete", new { Id = item.id }, new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7">Nenhum equipamento disponível.</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+<a href="@Url.Action("Create", "Item")" class="btn btn-success mt-4">Adicionar Dispositivo</a>
