@@ -3,9 +3,9 @@ Esse projeto é feito em ASP.net MVC, onde são 4 telas que é possivel criar um
 
 # Telas
 ![Inicial](src/1.png)
-[Criação](./src/2.png)
-[Detalhes](/src/3.png)
-[Editar](/src/4.png)
-[Deletar](/src/5.png)
+![Criação](src/2.png)
+![Detalhes](src/3.png)
+![Editar](src/4.png)
+![Deletar](src/5.png)
 
 # Instalação
